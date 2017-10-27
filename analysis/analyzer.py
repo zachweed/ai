@@ -1,4 +1,4 @@
-import chunk
+import morpheme
 
 from nltk.classify import NaiveBayesClassifier
 from nltk.corpus import subjectivity
@@ -13,7 +13,7 @@ class Analyzer:
 
     def analyze_sentiment(self, data):
         scores = []
-        for token in chunk.Chunk(data).tokens():
+        for token in morpheme.Morpheme(data).tokens():
             scores.append(self.score(token))
         return scores
 

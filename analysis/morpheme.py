@@ -2,7 +2,7 @@ import nltk
 
 from nltk import tokenize
 
-class Chunk:
+class Morpheme:
     def __init__(self, analysis_string):
         self.chunk = analysis_string
 
