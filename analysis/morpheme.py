@@ -1,10 +1,9 @@
 import nltk
-
-from nltk import tokenize
+import nltk.tokenize
 
 class Morpheme:
-    def __init__(self, analysis_string):
-        self.chunk = analysis_string
+  def __init__(self, analysis_string):
+    self.chunk = analysis_string
 
-    def tokens(self):
-        return nltk.sent_tokenize(self.chunk)
+  def tokens(self):
+    return nltk.tokenize.sent_tokenize(self.chunk)
