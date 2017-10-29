@@ -8,5 +8,6 @@ setup(name='jint',
   license='MIT',
   install_requires=[
   'nltk',
+  'fire'
   ],
   zip_safe=False)
