@@ -8,6 +8,7 @@ setup(name='jint',
   license='MIT',
   install_requires=[
   'nltk',
-  'fire'
+  'fire',
+  'textblob'
   ],
   zip_safe=False)
