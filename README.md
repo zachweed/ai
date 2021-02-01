@@ -15,7 +15,7 @@ python main.py sentiment "Are you okay with eating oatmeal? I'm normally not a b
 ## Nouns / Noun Phrases
 
 ```
-python main.py sentiment "Are you okay with eating oatmeal? I'm normally not a big fan of it myself."
+python main.py nouns "Are you okay with eating oatmeal? I'm normally not a big fan of it myself."
 
 [u'big fan']
 ```
