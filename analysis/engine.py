@@ -8,8 +8,8 @@ class Engine:
 
   # Aliased polarity scores, as aggregates
   # of overall sentiment from sentence.
-  def score(self, content):
-    return self.engine.polarity_scores(content)
+  def score(self, data):
+    return TextBlob(data).sentiment.polarity
 
   def analyze_sentiment(self, data):
     scores = []

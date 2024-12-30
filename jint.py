@@ -7,6 +7,9 @@ from analysis.morpheme import Morpheme
 for dep in ["vader_lexicon", "punkt", "brown"]: nltk.download(dep)
 
 class Jint:
+  def polarity(self, data):
+    return Engine().score(data)
+
   def sentiment(self, data):
     return Engine().analyze_sentiment(data)
 
