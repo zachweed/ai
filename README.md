@@ -1,5 +1,11 @@
 # jint
 
+## What it is
+Jint provides a simple interface for performing NLP related tasks.
+
+## Sources
+Many libraries helped with this. Specifically: `nltk`, `keras`, `tensorflow`, and `transformers`.
+
 ## Installation
 
 `python setup.py install`
