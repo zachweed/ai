@@ -6,6 +6,8 @@ class Engine:
   def __init__(self):
     self.engine = SentimentIntensityAnalyzer()
 
+  # Aliased polarity scores, as aggregates
+  # of overall sentiment from sentence.
   def score(self, content):
     return self.engine.polarity_scores(content)
 
