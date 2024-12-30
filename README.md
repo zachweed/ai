@@ -4,6 +4,16 @@
 
 `python setup.py install`
 
+## Polarity
+
+Polarity of some sentence.
+
+```
+python main.py polarity "Are you okay with eating oatmeal? I'm normally not a big fan of it myself."
+
+0.25
+```
+
 ## Sentiment
 
 ```
