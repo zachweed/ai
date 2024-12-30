@@ -15,3 +15,7 @@ class Jint:
 
   def nouns(self, data):
     return Morpheme(data).noun_phrases
+
+  def translate(self, data):
+    print(f"in translate")
+    return Engine().translate(data)

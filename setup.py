@@ -9,6 +9,9 @@ setup(name='jint',
   install_requires=[
   'nltk',
   'fire',
-  'textblob'
+  'textblob',
+  'transformers',
+  'tensorflow',
+  'tf_keras'
   ],
   zip_safe=False)
