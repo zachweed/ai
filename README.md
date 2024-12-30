@@ -24,6 +24,7 @@ quoi ressemble la vie?
 ### German
 ```
 python main.py translate "translate from English to German: What is life like"
+
 Wie sieht das Leben aus?
 ```
 
