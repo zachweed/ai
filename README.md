@@ -4,6 +4,14 @@
 
 `python setup.py install`
 
+## Translation
+
+Translate some string of text.
+
+```python main.py translate "translate from English to French: What is life like?"
+quoi ressemble la vie?
+```
+
 ## Polarity
 
 Polarity of some sentence.
