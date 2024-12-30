@@ -1,7 +1,7 @@
-# jint
+# comms
 
 ## What it is
-Jint provides a simple interface for performing NLP related tasks.
+comms provides a simple interface for performing NLP related tasks.
 
 ## Sources
 Many libraries helped with this. Specifically: `nltk`, `keras`, `tensorflow`, and `transformers`.
