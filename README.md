@@ -12,12 +12,19 @@ Many libraries helped with this. Specifically: `nltk`, `keras`, `tensorflow`, an
 
 ## Translation
 
-Translate some string of text.
+Translate some string of text. Some variety of languages can be provided. For example: both `German` and `French` work. If there is an unsupported language, leave an issue and we can get it resolved and/or added within.
+
+### French
 
 ```
 python main.py translate "translate from English to French: What is life like"
 
-quoi ressemble la vie
+quoi ressemble la vie?
+```
+### German
+```
+python main.py translate "translate from English to German: What is life like"
+Wie sieht das Leben aus?
 ```
 
 ## Polarity
