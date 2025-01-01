@@ -24,6 +24,19 @@ Wolf, Thomas and Debut, Lysandre and Sanh, Victor and Chaumond, Julien and Delan
 
 `python setup.py install`
 
+## Tokenization
+
+There is straightforward tokenization within this library, where we can generate a BoW (Bag of Words) containing primary keys of each word within some corpus of text.
+
+```
+python main.py tokenize "I am a person"
+I:      1
+am:     2
+a:      3
+person: 4
+{'I': 1, 'am': 2, 'a': 3, 'person': 4}
+```
+
 ## Translation
 
 Translate some string of text. Some variety of languages can be provided. For example: both `German` and `French` work. If there is an unsupported language, leave an issue and we can get it resolved and/or added within.
