@@ -1,6 +1,7 @@
 import sys
 import nltk
 
+from analysis.tokenizer import Tokenizer
 from analysis.engine import Engine
 from analysis.morpheme import Morpheme
 
@@ -18,3 +19,6 @@ class Comms:
 
   def translate(self, data):
     return Engine().translate(data)
+
+  def tokenize(self, data):
+    return Tokenizer(data).encode_corpus
