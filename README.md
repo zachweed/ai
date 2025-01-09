@@ -61,7 +61,7 @@ python main.py polarity "Are you okay with eating oatmeal? I'm normally not a bi
 ```
 
 ## Sentiment
-
+This is where this library started. So, we can determine how positive, negative, neutral, and overall of each some sentence is.
 ```
 python main.py sentiment "Are you okay with eating oatmeal? I'm normally not a big fan of it myself."
 
