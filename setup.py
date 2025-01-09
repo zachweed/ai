@@ -3,7 +3,7 @@ from setuptools import setup
 setup(name='comms',
   version='0.1',
   description='I analyze things my author writes',
-  url='http://github.com/zachweed/jint',
+  url='http://github.com/zachweed/comms',
   author='Zach Weed',
   license='MIT',
   install_requires=[
