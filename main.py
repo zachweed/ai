@@ -1,5 +1,5 @@
-import comms
+import ai
 import fire
 
 if __name__ == '__main__':
-  print(fire.Fire(comms.Comms))
+  print(fire.Fire(ai.Ai))

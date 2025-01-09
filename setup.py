@@ -1,9 +1,9 @@
 from setuptools import setup
 
-setup(name='comms',
-  version='0.1',
+setup(name='ai',
+  version='0.2',
   description='I analyze things my author writes',
-  url='http://github.com/zachweed/comms',
+  url='http://github.com/zachweed/ai',
   author='Zach Weed',
   license='MIT',
   install_requires=[
