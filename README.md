@@ -21,7 +21,7 @@ Answer: 'commercialized', score: 0.2764, start: 309, end: 323
 
 ## Tokenization
 
-There is tokenization within this library, where we can generate a BoW (Bag of Words) containing primary keys of each word within some corpus of text.
+There is tokenization within this library, where we can generate a BoW (Bag of Words) containing primary keys of each word within some corpora.
 
 ```
 python main.py tokenize "I am a person"
@@ -52,7 +52,7 @@ Wie sieht das Leben aus?
 
 ## Polarity
 
-Polarity of some sentence.
+Polarity of some sentence, meaning what the overall sentiment of some sentence is.
 
 ```
 python main.py polarity "Are you okay with eating oatmeal? I'm normally not a big fan of it myself."
