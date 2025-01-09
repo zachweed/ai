@@ -1,4 +1,4 @@
-# comms
+# ai
 
 ## What it is
 comms provides a simple interface for performing NLP related tasks.
