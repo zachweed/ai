@@ -12,6 +12,16 @@ In order to be fair:
 
 Abadi, Martin and Barham, Paul and Chen, Jing and Chen, Zheng and Davis, Austin and Dean, Jeffrey and Devin, Mat and Ghemawat, Sanjay and Irving, Geoffrey and Isard, Michael et al. (2016), TensorFlow: A system for large-scale machine learning, OSDI 265-283, vol. 16
 
+#### Question Answerer
+
+Currently this library uses `TFDistilBertForQuestionAnswering` as a pipeline for answering questions.
+
+```
+"A transformer is a deep learning model that adopts the mechanism of self-attention, differentially weighting the significance of each part of the input data. It is used primarily in the fields of natural language processing (NLP) and computer vision (CV).Like recurrent neural networks (RNNs), transformers are designed to process sequential input data, such as natural language, with applications towards tasks such as translation and text summarization. However, unlike RNNs, transformers process the entire input all at once. The attention mechanism provides context for any position in the input sequence. For example, if the input data is a natural language sentence, the transformer does not have to process one word at a time. This allows for more parallelization than RNNs and therefore reduces training times. Transformers were introduced in 2017 by a team at Google Brain and are increasingly becoming the model of choice for NLP problems, replacing RNN models such as long short-term memory (LSTM). The additional training parallelization allows training on larger datasets. This led to the development of pretrained systems such as BERT (Bidirectional Encoder Representations from Transformers) and GPT (Generative Pre-trained Transformer), which were trained with large language datasets, such as the Wikipedia Corpus and Common Crawl, and can be fine-tuned for specific tasks."
+
+python main.py answer_question "What pretrained systems were developed from parallelization", context
+```
+
 #### NLTK
 
 Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.

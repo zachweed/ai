@@ -22,3 +22,6 @@ class Comms:
 
   def tokenize(self, data):
     return Tokenizer(data).encode_corpus
+
+  def answer_question(self, question, context):
+    return Engine().answer_question(question, context)
