@@ -3,30 +3,25 @@
 ## What it is
 comms provides a simple interface for performing NLP related tasks.
 
-## Sources
-Many libraries helped with this. Specifically: `nltk`, `keras`, `tensorflow`, and `transformers`.
-
-In order to be fair:
-
-#### TensorFlow And Keras
-
-Abadi, Martin and Barham, Paul and Chen, Jing and Chen, Zheng and Davis, Austin and Dean, Jeffrey and Devin, Mat and Ghemawat, Sanjay and Irving, Geoffrey and Isard, Michael et al. (2016), TensorFlow: A system for large-scale machine learning, OSDI 265-283, vol. 16
-
-#### NLTK
-
-Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.
-
-#### Transformers
-
-Wolf, Thomas and Debut, Lysandre and Sanh, Victor and Chaumond, Julien and Delangue, Clément and Moi, Pierric and Cistac, Pierric and Ruder, Sebastian, et al. (2020), Transformers: State-of-the-art Natural Language Processing, arXiv:1910.03771
-
 ## Installation
 
 `python setup.py install`
 
+## Question Answerer
+
+Given some context, and a question, we can receive an answer to said question with this library.
+
+```
+"Underground hiphop is a genre of hiphop that comprises non-commercialized patterns of music, including concepts like: lo-fi, heavy sampling, limited releases, etc. Many are not aware of underground hip-hop as a genre, as it is like the special reserve of commercialized artists. Having said that, many of the commercialized artists have gone on to influence a lot of the artists that we know today."
+
+python main.py answer_question "What genre of artists were influenced by underground hiphop artists?", context
+
+Answer: 'commercialized', score: 0.2764, start: 309, end: 323
+```
+
 ## Tokenization
 
-There is straightforward tokenization within this library, where we can generate a BoW (Bag of Words) containing primary keys of each word within some corpus of text.
+There is tokenization within this library, where we can generate a BoW (Bag of Words) containing primary keys of each word within some corpus of text.
 
 ```
 python main.py tokenize "I am a person"
@@ -80,3 +75,7 @@ python main.py nouns "Are you okay with eating oatmeal? I'm normally not a big f
 
 [u'big fan']
 ```
+
+## Sources
+
+Many libraries helped with this. Specifically: `nltk`, `keras`, `tensorflow`, `huggingface` (as a service), and `transformers`.
