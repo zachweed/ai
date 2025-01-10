@@ -1,10 +1,11 @@
 import re
 
-from analysis.question_answerer import QuestionAnswerer
-from analysis.translation import Translation
-from analysis.morpheme import Morpheme
 from nltk.sentiment import *
 from textblob import TextBlob
+from analysis.context import Context
+from analysis.ask_question import AskQuestion
+from analysis.translation import Translation
+from analysis.morpheme import Morpheme
 
 class Engine:
   def score(self, data):
@@ -22,6 +23,6 @@ class Engine:
   def translate(self, data):
     return Translation(data).translate
 
-  def answer_question(self, question, context):
-    return QuestionAnswerer().answer_question(question, context)
+  def answer_question(self, question, context, context_level):
+    return AskQuestion(question, context, context_level).answer()
 
