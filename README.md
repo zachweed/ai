@@ -11,21 +11,19 @@ ai provides a simple interface for performing NLP related tasks.
 
 Given some context, and a question, we can receive an answer to said question with this library.
 
-```
-user/ CONTEXT="Underground hiphop is a genre of hiphop that comprises non-commercialized patterns of music, including concepts like: lo-fi, heavy sampling, limited releases, etc. Many are not aware of underground hip-hop as a genre, as it is like the special reserve of commercialized artists. Having said that, many of the commercialized artists have gone on to influence a lot of the artists that we know today."
+```bash
+$ CONTEXT="Underground hiphop is a genre of hiphop that comprises non-commercialized patterns of music, including concepts like: lo-fi, heavy sampling, limited releases, etc. Many are not aware of underground hip-hop as a genre, as it is like the special reserve of commercialized artists. Having said that, many of the commercialized artists have gone on to influence a lot of the artists that we know today."
 
-user/ python main.py answer_question "What genre of artists were influenced by underground hiphop artists?", "$CONTEXT"
-
+$ python main.py answer_question "What genre of artists were influenced by underground hiphop artists?", "$CONTEXT"
 Answer: 'commercialized', score: 0.2764, start: 309, end: 323
 
-user/ python main.py answer_question "Are many away of underground hiphop as a genre?", "$CONTEXT"
+$ python main.py answer_question "Are many away of underground hiphop as a genre?", "$CONTEXT"
 Answer: 'Many are not aware', score: 0.2839, start: 164, end: 182
 
-user/ python main.py answer_question "Is there a genre that has underground in the name?
-"
+$ python main.py answer_question "Is there a genre that has underground in the name?, "$CONTEXT"
 Answer: 'Underground hiphop', score: 0.7883, start: 0, end: 18
 
-user/ python main.py answer_question "Commercial hiphop artists were influence by what genre of artists?"
+$ python main.py answer_question "Commercial hiphop artists were influence by what genre of artists?", "$CONTEXT"
 Answer: 'Underground hiphop', score: 0.2537, start: 0, end: 18
 ```
 
