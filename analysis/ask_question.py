@@ -1,3 +1,5 @@
+import hashlib
+
 from transformers import pipeline
 from analysis.context import Context
 
@@ -19,4 +21,9 @@ class AskQuestion:
     a = " ".join(Context().abbreviated_context(self.context_level))
     b = " ".join(self.context)
     return a + b
+
+  def hash_context(self):
+    encoded = self.context.encode("utf-8")
+    hash_object = hashlib.md5(encoded)
+    return hash_object.hex_digest
     
