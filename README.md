@@ -27,6 +27,26 @@ $ python main.py answer_question "Commercial hiphop artists were influence by wh
 Answer: 'Underground hiphop', score: 0.2537, start: 0, end: 18
 ```
 
+## Lab
+
+There is a Lab defined that accepts a Dictionary of words. In terms of the dictionary of words, this is usually two corpora of text, where we fit a Vectorizer with the shared vocabulary from one corpus, transform it in relation to the second corpus, and resulting from this we have two points (encoded vectors) that we can place in a high-dimensional space (the Lab) where we can determine euclidean and cosine similarity. 
+
+```
+string_one = "hello I am a human"
+string_two = "hello I am not a human but a man-like creature"
+
+dictionary = Dictionary().fits(string_one)
+
+x_one = dictionary.encoded_vector
+x_two = dictionary.transform(string_two)
+
+lab = Lab(x_one, x_two)
+
+lab.euclidean()
+
+3.6055
+```
+
 
 ## Tokenization
 
