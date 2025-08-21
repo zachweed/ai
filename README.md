@@ -1,7 +1,13 @@
 # ai
 
 ## What it is
-ai provides a simple interface for performing NLP related tasks.
+ai provides an interface for performing NLP related tasks. Assuming we have "a paragraph" as a string of characters, there are two approaches: simple and complex.
+
+### Simple
+One can provide a sentence of characters and call things like `#polarity` to determine how 'positive' a sentence is. 
+
+### Complex
+One could encode the vector as a paragraph in `Dictionary`. Likewise, if someone wanted to the could represent two 'dictionaries' of vectorized strings in a high-dimensional space for performing linear algebra and calculus operations on the data.
 
 ## Installation
 
