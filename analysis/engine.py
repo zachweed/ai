@@ -6,16 +6,20 @@ from analysis.context import Context
 from analysis.ask_question import AskQuestion
 from analysis.translation import Translation
 from analysis.morpheme import Morpheme
+from analysis.ensemble_sentiment import EnsembleSentiment
 
 class Engine:
   def score(self, data):
     return TextBlob(data).sentiment.polarity
 
-  def analyze_sentiment(self, data):
-    scores = []
-    for token in Morpheme(data).tokens():
-        scores.append(self.score(token))
-    return scores
+  def analyze_sentiment(self, data, simple=True):
+    if simple:
+      scores = []
+      for token in Morpheme(data).tokens():
+          scores.append(self.score(token))
+      return scores
+    else:
+      model = EnsembleSentiment(use_voting_head=False)
 
   def extract_noun_phrases(self, data):
     return Morpheme(data).noun_phrases
