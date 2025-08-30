@@ -1,4 +1,5 @@
 import re
+import joblib
 
 from nltk.sentiment import *
 from textblob import TextBlob
@@ -19,7 +20,8 @@ class Engine:
           scores.append(self.score(token))
       return scores
     else:
-      model = EnsembleSentiment(use_voting_head=False)
+      model = joblib.load("data/sentiment_model.pkl")
+      print(model.fit([data]))
 
   def extract_noun_phrases(self, data):
     return Morpheme(data).noun_phrases
