@@ -12,8 +12,11 @@ class Ai:
   def polarity(self, data):
     return Engine().score(data)
 
-  def sentiment(self, data):
+  def sentiment_scores(self, data):
     return Engine().analyze_sentiment(data)
+
+  def overall_sentiment(self, data):
+    return Engine().analyze_sentiment(data, scored=False)
 
   def nouns(self, data):
     return Morpheme(data).noun_phrases
