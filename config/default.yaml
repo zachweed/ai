@@ -1,0 +1,8 @@
+paths:
+  data_dir: "./data"
+  sentiment_model_file: "sentiment_model.pkl"
+
+training:
+  cv_splits: 3
+  max_features: 5000
+  ngram_range: [1, 2]
