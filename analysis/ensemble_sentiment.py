@@ -12,7 +12,7 @@ from sklearn.ensemble import StackingClassifier, VotingClassifier
 from sklearn.model_selection import StratifiedKFold
 
 class EnsembleSentiment(BaseEstimator, ClassifierMixin):
-  def __init__(self, max_features: int = 5000, ngram_range: tuple = (1,2), use_voting_head: bool = False, cv_splits: int = 3, random_state: int = 42):
+  def __init__(self, max_features: int = 5000, ngram_range: tuple = (1,2), use_voting_head: bool = True, cv_splits: int = 3, random_state: int = 42):
     self.max_features = max_features
     self.ngram_range = ngram_range
     self.use_voting_head = use_voting_head
