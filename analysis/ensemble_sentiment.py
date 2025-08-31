@@ -56,7 +56,7 @@ class EnsembleSentiment(BaseEstimator, ClassifierMixin):
 
     if self.use_voting_head:
       voters = self.base_estimators + [("stack", self.stacker)]
-      self.ensembler = VotingClassifier(estimators=voters, voting="soft", n_jobs=-1)
+      self.ensembler = VotingClassifier(estimators=voters, voting="hard", n_jobs=-1)
     else:
       self.ensembler = self.stacker
 
