@@ -81,6 +81,8 @@ lab.euclidean()
 3.6055
 ```
 
+## PCA
+
 
 ## Tokenization
 
