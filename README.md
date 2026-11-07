@@ -99,7 +99,7 @@ person: 4
 
 ## Translation
 
-Translate some string of text. Some variety of languages can be provided. For example: both `German` and `French` work. If there is an unsupported language, leave an issue and we can get it resolved and/or added within.
+Translate some string of text. Some variety of languages can be provided. For example: both `German` and `French` work. If there is an unsupported language, leave an issue and we can get it resolved and/or added within. Architecturally speaking, this code uses a pre-trained model and loads the model file into a Transformer Architecture with `TFAutoModel`. Technically we can construct the attention mechanism ourselves though if needed.
 
 ### French
 
