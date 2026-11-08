@@ -1,15 +1,23 @@
 # ai
 
 ## What it is
-ai provides an interface for performing NLP related tasks. Assuming we have "a paragraph" as a string of characters, there are two approaches: simple and complex.
+ai provides an interface for performing Machine Learning tasks. The goal of the projects is identifying a few things:
 
-### Simple
+1) how we could use things like tensorflow and an automodel to perform some task,
+2) how we can perform the task through building discrete components handling the mathematical aspects of said task, &
+3) how we can also use intermediary layers between that abstract away most of the complexity
+
+### [NLP]
+
+Assuming we have "a paragraph" as a string of characters, there are two approaches: simple and complex.
+
+#### [NLP] - Simple
 One can provide a sentence of characters and call things like `#polarity` to determine how 'positive' a sentence is. 
 
-### Complex (non-ML)
+#### [NLP] - Complex - non-ML
 One could encode the vector as a paragraph in `Dictionary`. Likewise, if someone wanted to the could represent two 'dictionaries' of vectorized strings in a high-dimensional space for performing linear algebra and calculus operations on the data.
 
-### Complex (ML)
+#### [NLP] - Complex - ML
 
 One could also work with the library in a way where they are interacting with things in a ML-oriented fashion. Meaning, rather than merely analyzing sentiment, they can work with a specific strategy of analyzing sentiment (e.g. Ensemble Learning).
 
@@ -18,7 +26,6 @@ One could also work with the library in a way where they are interacting with th
 `% python setup.py install`
 
 * In the event that any modules are missing (`ModuleNotFoundError`), one can always manually install via `pip install _module_name_`
-
 
 ## Sentiment
 This is where this library started. So, we can determine how positive, negative, neutral, and overall of each some sentence is. What is returned is an object containing individual scores for each dimension of sentimentality.
